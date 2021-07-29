@@ -1,6 +1,5 @@
 # language_version_scraper
 [![maintained by](https://img.shields.io/badge/maintained%20by-ariv797-blue)](https://github.com/ariv797)
-[![GitHub](https://img.shields.io/github/license/ariv797/language_version_scraper)](LICENSE)
 
 Just scrapes the latest version of popular programming languages
 
