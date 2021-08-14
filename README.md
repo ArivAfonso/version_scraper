@@ -11,6 +11,12 @@ Just scrapes the latest version of popular programming languages
 - [x] Groovy
 - [x] Ruby
 
+## Tools suppported:
+- [x] Pandas
+- [x] Numpy
+- [x] Aesara
+- [x] Bootstrap
+
 More to come!!!
 
 ## Requirements
