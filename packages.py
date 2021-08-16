@@ -28,7 +28,7 @@ def aesara():
     match = soup.find('div', class_='f1 flex-auto min-width-0 text-normal')
     version = match.a.text
     python = version.split('v')[1]
-    print('Numpy '+python)
+    print('Aesara '+python)
 
 def bootstrap():
     bootstrap_website = requests.get("https://getbootstrap.com/").text
@@ -38,4 +38,28 @@ def bootstrap():
     version = match.strong.text
     python = version.split('v')[1]
     print('Bootstrap '+python)
+
+def jenkins():
+    jenkins_website = requests.get("https://github.com/jenkinsci/jenkins/releases").text
+    soup = bs4.BeautifulSoup(jenkins_website, 'lxml')
+
+    match = soup.find('div', class_='f1 flex-auto min-width-0 text-normal')
+    version = match.a.text
+    print('Jenkins '+version)
+
+def flask():
+    flask_website = requests.get("https://github.com/pallets/flask/releases").text
+    soup = bs4.BeautifulSoup(flask_website, 'lxml')
+
+    match = soup.find('div', class_='f1 flex-auto min-width-0 text-normal')
+    version = match.a.text
+    print('Flask '+version)
+
+def kibana():
+    flask_website = requests.get("https://www.elastic.co/downloads/kibana").text
+    soup = bs4.BeautifulSoup(flask_website, 'lxml')
+
+    match = soup.find('div', class_='jsx-3957066628 col-8')
+    version = match.text
+    print('Kibana '+version)
 
